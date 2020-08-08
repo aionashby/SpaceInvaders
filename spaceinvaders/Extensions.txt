@@ -1,0 +1,30 @@
+Aion Ashby and Maxine Nzegwu NETIDs: aea99 and man227
+4 December 2018
+
+Extensions:
+For our extensions we made multiple waves and we also put the score and number of lives on the screen.
+We also made the background black.
+
+New Wave:
+For the new waves, if the player has won the game, and they still have lives left, the game will create
+a new wave of aliens, but this time the speed of the aliens will double. In addition, the score and number of lives
+left by the player will role over to the next wave.
+
+We made this by adding parameters to our __init__ in waves (the parameters were score, lives, and speed). This way when
+the wave started over we could control the score, lives, and the speed.
+
+Player Score:
+This extension displays the score of the player as the player shoots down aliens. The top most row is worth the
+most points(15 points per alien), while the bottom most row is worth the least(5 points per alien). All the rows in the
+middle are worth 10 points per alien. If there is only one row, the row is worth 5 points per alein and if there
+are two rows the points are worth 5 points per alien for the bottom row and 15 points per alien for the top row.
+
+We made this by making a method that first creates a list that holds the number of rows of aliens in the wave. Then
+we found the max of the list and the min of the list. After, the method would check to see what row the alien shot was
+in and then add points to the score based on the aliens row. The max row results in the lowest amount of points
+(5 per alien), while the min row results in the highest amount of points(15 per alien)
+
+Other:
+Adding the lives to the screen we implemented similarly to how we implemented player score, except we only had the lives
+change when the ship became none, until lives reached 0.
+We also made the background black for contrast purposes.
